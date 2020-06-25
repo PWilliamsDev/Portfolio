@@ -1,0 +1,100 @@
+@font-face {
+  font-family: Nord-BookItalic; src: url('./Fonts/Nord-BookItalic.ttf');
+}
+@font-face {
+  font-family: Nord-MediumItalic; src: url('./Font/Nord-MediumItalic.ttf');
+}
+body {
+  background: url('images/background 3.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding-bottom: 2160px;
+  margin: 0px;
+}
+/* Link Styles */
+
+.nav a{
+  text-decoration: none;
+  color: white;
+}
+.nav  a:hover {
+    color: #858483;
+    position: fixed;
+
+}
+/* Section Styles */
+
+.nav {
+  display: flex;
+  list-style-type: none;
+  font-family: Nord-BookItalic;
+  font-size: 1.3em
+}
+.nav li {
+  padding: 10px;
+  position: relative;
+  right: 50px
+}
+.nav .nav-name {
+margin-right: auto;
+}
+
+.nav-name {
+  position: relative;
+  right: 3em;
+  color: white;
+}
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* Name Style */
+.name {
+  position: relative;
+
+}
+.firstname {
+  text-align: center;
+  position: inherit;
+  top: 9.1em;
+  right: 115px;
+  font-size: 3em;
+  font-family: Nord-BookItalic;
+  color: cyan;
+}
+.firstname2 {
+  text-align: center;
+  position: inherit;
+  top: 339px;
+  right: 120px;
+  font-size: 3em;
+  font-family: Nord-BookItalic;
+  color: pink;
+}
+.secondname {
+  text-align: center;
+  position: relative;
+  top: 242px;
+  right: -150px;
+  font-size: 3em;
+  font-family: Nord-BookItalic;
+  color: pink;
+}
+.secondname2 {
+  text-align: center;
+  position: relative;
+  top: 144px;
+  right: -144px;
+  font-size: 3em;
+  font-family: Nord-BookItalic;
+  color: cyan;
+  }
+.jobtitle {
+  font-family: arial;
+  color: white;
+  font-style: bold;
+  text-align: center;
+  position: relative;
+  top: 4.5em;
+}
