@@ -1,257 +1,172 @@
-@font-face {
-  font-family: Nord-BookItalic; src: url('./Fonts/Nord-BookItalic.ttf');
+                    /* Default */
+*{
+    margin: 0;
+    padding: 0;
 }
-@font-face {
-  font-family: Nord-MediumItalic; src: url('./Font/Nord-MediumItalic.ttf');
-}
-body {
-  background: url('images/background 3.png');
-  background-repeat: no-repeat;
-  background-size:auto;
-  padding-bottom: 2160px;
-  margin: 0px;
-  background-color: #grey;
-  min-width: 480px;
-}
-
-                                /* Navigation Bar */
-.nav a{
-  text-decoration: none;
-  color: White;
-
-}
-.nav  a:hover {
-    color: #858483;
-}
-.nav {
-  display: flex;
-  list-style-type: none;
-  font-family: Nord-BookItalic;
-  font-size: 1.3654em;
-  text-shadow: 10px;
-}
-.nav li {
-  padding: 10px;
-  margin-right: 35px;
-  position: inherit;
-}
-.nav .nav-name {
-margin-right: auto;
-}
-.nav-name {
-  position: relative;
-  right: 3em;
-  color: white;
-}
-.nav-bar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10000;
-
-}
-/* Name Style */
-.name {
-  position: relative;
-  max-height: 1px;
-
-                                /* Landing Page */
-}
-.firstname {
-  text-align: center;
-  position: inherit;
-  top: 9.1em;
-  right: 115px;
-  font-size: 3em;
-  font-family: Nord-BookItalic;
-  color: cyan;
-}
-.firstname2 {
-  text-align: center;
-  position: inherit;
-  top: 339px;
-  right: 120px;
-  font-size: 3em;
-  font-family: Nord-BookItalic;
-  color: pink;
-}
-.secondname {
-  text-align: center;
-  position: inherit;
-  top: 242px;
-  padding-left: 298px;
-  font-size: 3em;
-  font-family: Nord-BookItalic;
-  color: pink;
-}
-.secondname2 {
-  text-align: center;
-  position: inherit;
-  top: 144px;
-  padding-left: 307px;
-  font-size: 3em;
-  font-family: Nord-BookItalic;
-  color: cyan;
+body{
+    font-family: 'Nunito Sans', sans-serif;
   }
-.jobtitle {
-  font-family: arial;
-  color: white;
-  font-style: bold;
-  text-align: center;
-  position: relative;
-  top: 20em;
+
+
+                    /* Navigation */
+.logo{
+    position: fixed;
+    top: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    left: 15px;
+    z-index: 100;
+    color: rgb(12, 12, 12);
+}
+.hamburger-menu{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 100;
+}
+.line{
+    width: 35px;
+    height: 5px;
+    background-color: rgb(12, 12, 12);
+    margin: 6px 0;
+  }
+
+
+                    /* Landing */
+.landing{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    /*
+    overflow-x: hidden;
+    */
 }
 
-                                /* Project Page */
-#projects-page-break {
-  position: relative ;
-  top: 59.4em;
-  opacity: 100%;
+
+                    /* Projects */
+.projects{
+    position: relative;
+    height: 100vh;
+    background-color: rgba(36, 107, 107, 0.4);
+    padding-bottom: 10vh;
 
 }
-#project {
-  font-family: Nord-BookItalic;
-  text-align: center;
-  position: absolute;
-  top: 0.8em;
-  left: 45%;
-  font-size: 200%;
-  color: black;
+.scrolling-wrapper{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+    top: 20vh;
+    margin-bottom: 10vh;
 }
-.project-page {
-  text-align: center;
-  position: relative;
-  top: 58.9em;
-  height: 67.5em;
-  background-color: #a8cae4;
-  margin-left:auto;
-  margin-left:auto;
-  min-width: auto%;
-}
-.project1 {
-  font-family: Nord-BookItalic;
-  line-height: .1em;
-  position: absolute;
-  top: 80em;
-  left: 37em;
-}
-.project1 span {
-  color: #ce3138;
-  position: inherit;
-}
-.project1 img {
-  position: relative;
-  left: 25em;
-  top: 1em;
-  width: 25%;
-  height: 25%;
-  max-width: autopx;
-  min-width: 200px;
-}
-.project1-links #source  {
-  font-family: Nord-BookItalic;
-  position:absolute;
-  top: 65em;
-  left: 26em;
-  margin-left: 16em;
-  margin-right: 60em;
-  background-color: white;
-  outline: 4px solid black;
-}
-.project1-links #website {
-  font-family: Nord-BookItalic;
-  position: absolute;
-  top: 65em;
-  left: 34em;
-  margin-left: 15em;
-  margin-right: 60em;
-  background-color: white;
-  outline: 4px solid black;
-}
-.project2 {
-  font-family: Nord-BookItalic;
-  line-height: .1em;
-  position: absolute;
-  top: 103em;
-  left: 37em;
-}
-.project2 span {
-  color: #ce3138;
-  position: inherit;
-}
-.project2 img {
-  position: relative;
-  left: 25em;
-  width: 25%;
-  height: 25%;
-}
-.project2-links #source {
-  font-family: Nord-BookItalic;
-  position: relative;
-  top: 29em;
-  left: 27em;
-  margin-left: 15em;
-  margin-right: 60em;
-  background-color: white;
-  outline: 4px solid black;
-}
-.project2-links #website {
-  font-family: Nord-BookItalic;
-  position: relative;
-  top: 27em;
-  left: 34.5em;
-  margin-left: 15em;
-  margin-right: 60em;
-  background-color: white;
-  outline: 4px solid black;
+.demo{
+    width: 100%;
+    transform: scale(1);
 }
 
-                            /* Skills Page */
-#skills-page-break {
-  position: relative;
-  top: 51.5em;
-  opacity: 0%;
+.project-1{
+    display: inline-block; 
+    margin-left: 20vw;
+    width: 80vw; 
+    height: 20.8vh;
+    position: relative;
+    background: pink;
 }
-#basic-skills {
-  font-family: Nord-BookItalic;
-  font-size: 231%;
-  text-align: center;
-  color: white;
-  position: relative;
-  top: 1.4em;
-  color: black;
+.project-1::before{
+    content: '';
+    display: inline-block; 
+    position: absolute;
+    width: 2vh; 
+    height: 20.8vh;
+    right: 80vw;
+    top: 0;
+    background: rgb(121, 121, 121);
+}
+.project-1::after{
+    content:'';
+    display: inline-block; 
+    position: absolute;
+    width: 37vh; 
+    height: 20.8vh;
+    left: 80vw;
+    background: orange;
+}
+.project-2{
+    display: inline-block; 
+    margin-left: 20vw;
+    width: 80vw; 
+    height: 20.8vh;
+    position: relative;
+    background: pink;
+}
+.project-2::before{
+    content: '';
+    display: inline-block; 
+    position: absolute;
+    width: 2vh; 
+    height: 20.8vh;
+    right: 80vw;
+    top: 0;
+    background: rgb(121, 121, 121);
+}
+.project-2::after{
+    content: '';
+    display: inline-block; 
+    position: absolute;
+    width: 37vh; 
+    height: 20.8vh;
+    left: 80vw;
+    background: orange;
+}.project-3{
+    display: inline-block; 
+    margin-left: 20vw;
+    width: 80vw; 
+    height: 20.8vh;
+    position: relative;
+    background: pink;
+}
+.project-3::before{
+    content: '';
+    display: inline-block; 
+    position: absolute;
+    width: 2vh; 
+    height: 20.8vh;
+    right: 80vw;
+    top: 0;
+    background: rgb(121, 121, 121);
+}
+.project-3::after{
+    content: '';
+    display: inline-block; 
+    position: absolute;
+    width: 37vh; 
+    height: 20.8vh;
+    left: 80vw;
+    background: orange;
+}
 
-}
-.skills-page {
-  position: relative;
-  top: 49.5em;
-  height: 67.5em;
-  background-color: #e2aaa5;
-  margin-left: auto;
-  margin-right: auto;
-}
-#languages {
-  color: white;
-  font-family: Nord-BookItalic;
-  font-size: 200%;
-  position: relative;
-  top: 5em;
 
+
+/*
+.scrolling-wrapper{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
-.skill-images {
-  position: relative;
-  bottom: 94em;
+.card{
+    display: inline-block;
 }
-.skill-images img {
-  position: relative;
-  width: 10%;
-  height: 10%;
-  top: 95em;
-  left: 35%;
-}
-#frameworks-libraries {
-  font-family: Nord-BookItalic;
-  color: white;
-  position: relative;
-  top: 26em;
-}
+.content{
+    width: 75vw; 
+    height: 25vh;
+    background: blue;
+    margin-top: 190px;
+
+ }
+ .content::after{
+     content: '';
+     width: 400px; 
+     height: 400px;
+     background: orange;
+     position: absolute;
+    left: 100px;
+  }
+  */
