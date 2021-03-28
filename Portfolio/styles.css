@@ -40,6 +40,23 @@ body{
     overflow-x: hidden;
     */
 }
+.intro{
+    position: relative;
+    top: 20vh;
+    font-size: 2rem;
+    margin-left: 15vw;
+}
+.intro span{
+    display: block;
+    color:rgba(36, 107, 107);
+    font-weight: 600;
+    margin-left: 2vw;    
+}
+.hero-bg img{
+    position: absolute;
+    top: 40vh;
+    width: 100%;
+}
 
 
                     /* Projects */
@@ -50,12 +67,16 @@ body{
     padding-bottom: 10vh;
 
 }
+
 .scrolling-wrapper{
     overflow-x: scroll;
     overflow-y: hidden;
     position: relative;
     top: 20vh;
     margin-bottom: 10vh;
+}
+.scrolling-wrapper::-webkit-scrollbar {
+    display: none;
 }
 .demo{
     width: 100%;
