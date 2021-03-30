@@ -9,6 +9,7 @@ body{
 
 
                     /* Navigation */
+                   
 
 .logo{
     position: fixed;
@@ -19,73 +20,60 @@ body{
     z-index: 100;
     color: rgb(12, 12, 12);
 }
+.snav{
+    opacity: 0;
+}
 .hamburger-menu{
     position: fixed;
     top: 15px;
     right: 15px;
-    z-index: 100;
+    z-index: 1000;
 }
 .line{
     width: 35px;
     height: 5px;
     background-color: rgb(12, 12, 12);
     margin: 6px 0;
-  }
-input[type=checkbox]{
-	height: 0;
-	width: 0;
-	visibility: hidden;
 }
 
-label {
-	cursor: pointer;
-	text-indent: -9999px;
-	width: 52px;
-	height: 27px;
-	background: grey;
-	float: right;
-	border-radius: 100px;
-	position: relative;
+.nav-list{
+    position: fixed;
+    right: 0;
+    width: 75vw;
+    height: 100vh;
+    list-style-type: none;
+    background-color: gray;
+    z-index: 100;
+    font-weight: 700;
+    text-align: center;
 }
 
-label:after {
-	content: '';
-	position: absolute;
-	top: 3px;
-	left: 3px;
-	width: 20px;
-	height: 20px;
-	background: #fff;
-	border-radius: 90px;
-	transition: 0.3s;
+.nav-item{
+    position: relative;
+    top: 35vh;
+    margin-top: 2vh;
+    font-size: 1.4rem;
 }
 
-input:checked + #tggle {
-	background: #4a36ff;
+.nav-link{
+    text-decoration: none;
+    color: black;
 }
 
-#switch:checked + :after {
-	left: calc(100% - 5px);
-	transform: translateX(-100%);
-}
 
-#tggle:active:after {
-	width: 45px;
-}
 
-html.transition,
-html.transition *,
-html.transition *:before,
-html.transition *:after {
-  transition: all 750ms !important;
-  transition-delay: 0 !important;
-}
+
+
+
+
+
 
                     /* Landing */
 .landing{
-    /*background-color: rgb(255, 255, 255);*/
-    /* Color for Dark Mode */
-        background-color: rgb(80, 80, 80);
+    background-color: #6b95b3;
+    /* Color for Dark Mode
+    background-color: rgb(80, 80, 80);
+     */
     height: 100vh;
     overflow-x: hidden;
 }
@@ -97,27 +85,19 @@ html.transition *:after {
 }
 .intro span{
     display: block;
+    /*
     color:rgba(36, 107, 107);
+    */
     font-weight: 600;
     margin-left: 2vw;    
 }
 #hero{
-    width: 100vw;
-}
-/*
-.hero-bg img{
     position: relative;
-    top: 40vh;
-    left: 5vw;
     width: 100vw;
+    top: 30vh;
+
 }
-#darkimage{
-    position: relative;
-    top: 11.2vh;
-    left: 5vw;
-    width: 100vw;
-}
-*/
+
 
 
                     /* Projects */
