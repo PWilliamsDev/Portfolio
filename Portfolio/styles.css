@@ -18,46 +18,65 @@ body{
     font-weight: bold;
     left: 15px;
     z-index: 100;
-    color: rgb(12, 12, 12);
+    color: rgb(46, 46, 46);
 }
-.snav{
-    opacity: 0;
-}
+
 .hamburger-menu{
     position: fixed;
     top: 15px;
     right: 15px;
     z-index: 1000;
+    cursor: pointer;
 }
 .line{
     width: 35px;
     height: 5px;
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(46, 46, 46);
     margin: 6px 0;
+    transition: all .6s;
 }
-
-.nav-list{
+.change .line-1{
+    transform: rotateZ(-45deg) translate(-8px, 0px);
+}
+.change  .line-2 {
+    transform: rotateZ(45deg) translate(-8px, 0px);
+}
+.snav{
+    position: relative;
+    right: -100em;
+}
+.ham-container{
+    z-index: 1;
     position: fixed;
-    right: 0;
-    width: 75vw;
+    width: 60vw;
+    height: 100vh;   
+}
+.blur-container{
+    background-color: rgba(168, 204, 215, 0.97);
+    position: fixed;
+    width: 60vw;
     height: 100vh;
+    filter: blur(3px);
+    border-radius: 5% 0 0 5%;
+}
+.change {
+    left: 40vw;
+}
+.nav-list{
     list-style-type: none;
-    background-color: gray;
     z-index: 100;
     font-weight: 700;
     text-align: center;
 }
-
 .nav-item{
     position: relative;
-    top: 35vh;
-    margin-top: 2vh;
+    top: 40vh;
+    margin-top: 3.5vh;
     font-size: 1.4rem;
 }
-
 .nav-link{
     text-decoration: none;
-    color: black;
+    color: rgb(77, 77, 77);
 }
 
 
@@ -70,7 +89,9 @@ body{
 
                     /* Landing */
 .landing{
-    background-color: #6b95b3;
+    background-color: #d6eeff;
+
+
     /* Color for Dark Mode
     background-color: rgb(80, 80, 80);
      */
@@ -80,22 +101,34 @@ body{
 .intro{
     position: relative;
     top: 20vh;
-    font-size: 2rem;
-    margin-left: 15vw;
+    text-align: center;  
+    font-size: 2.3rem;
+    color: rgb(46, 46, 46);
 }
-.intro span{
+.test{
+    position: relative;
+    right: 35px;
+
+}
+.intro .l-name{
     display: block;
-    /*
-    color:rgba(36, 107, 107);
-    */
+    text-align: center;
+    color: rgb(216, 133, 133);
     font-weight: 600;
-    margin-left: 2vw;    
+
+
+}
+.intro .title{
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
 }
 #hero{
     position: relative;
     width: 100vw;
-    top: 30vh;
-
+    transform: scale(1.7);
+    top: 45vh;
+    margin-left: 5vw;
 }
 
 
@@ -104,7 +137,7 @@ body{
 .projects{
     position: relative;
     height: 100vh;
-    background-color: rgba(36, 107, 107, 0.4);
+    background-color: rgba(36, 107, 107, 0.4); /*246b6b66*/
     padding-bottom: 10vh;
 }
 
