@@ -139,30 +139,63 @@ body{
 
 
 
+                    /* About Me */
+.about{
+    height: 100vh;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about h1{
+    padding: 8vh 0 5vh;
+}
+.card{
+ width: 50vw;
+ height: 25vh;
+ background-color: rgb(255, 255, 255);
+ margin-bottom: 2vw;
+}
+
+
+
+
+
+
+
                     /* Projects */
 .projects{
-    position: relative;
     height: 100vh;
     background-color: rgba(36, 107, 107, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-/*
-.scrolling-wrapper::-webkit-scrollbar {
-    display: none;
+.projects h1{
+    padding: 8vh 0 5vh;
 }
-*/
-
-
-  
+.project{
+    margin-bottom: 2vh;
+} 
 .demo img{
     width: 80vw;
     /*transform: scale(1);*/
     position: relative;
-    opacity: 50%;
 }
 
 
 
+                    /* Contact */
+.contact{
+    height: 75vh;
+    background-color: rgb(29, 29, 29);
+    
+}
+.contact h1{
+    color: rgb(224, 224, 224);
+    text-align: center;
+    padding: 8vh 0 5vh;
+}
 
 
 
