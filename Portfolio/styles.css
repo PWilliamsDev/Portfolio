@@ -81,7 +81,7 @@ body{
 
                     /* Landing */
 .landing{
-    background-color: #d6eeff;
+    background-color: whitesmoke;
 
     /* Color for Dark Mode
     background-color: rgb(80, 80, 80);
@@ -105,7 +105,7 @@ body{
 .intro .l-name{
     display: block;
     text-align: center;
-    color: rgb(216, 133, 133);
+    color: rgb(133, 186, 216);
     font-weight: 600;
 
 
@@ -127,7 +127,7 @@ body{
     /*
     position: relative;
     */
-    width: 100vw;
+    width: 100%;
     transform: scale(1.7);
     z-index: 500;
     /*
@@ -142,19 +142,27 @@ body{
                     /* About Me */
 .about{
     height: 100vh;
-    background-color: beige;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .about h1{
     padding: 8vh 0 5vh;
+    margin: 2em 0;
+    font-size: 2rem;
+    color: rgb(54, 54, 54);
+    text-transform: uppercase;
+
 }
 .card{
- width: 50vw;
- height: 25vh;
- background-color: rgb(255, 255, 255);
- margin-bottom: 2vw;
+    background-color: rgb(26, 26, 26);
+    margin-bottom: 3vw;
+     height: 400px;
+     width: 400px;
+}
+.card1, .card2, .card3{
+
 }
 
 
@@ -166,13 +174,17 @@ body{
                     /* Projects */
 .projects{
     height: 100vh;
-    background-color: rgba(36, 107, 107, 0.4);
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .projects h1{
     padding: 8vh 0 5vh;
+    margin: 2em 0;
+    font-size: 2rem;
+    color: rgb(54, 54, 54);
+    text-transform: uppercase;
 }
 .project{
     margin-bottom: 2vh;
@@ -188,13 +200,17 @@ body{
                     /* Contact */
 .contact{
     height: 75vh;
+    margin-top: 5em;
     background-color: rgb(29, 29, 29);
     
 }
 .contact h1{
-    color: rgb(224, 224, 224);
-    text-align: center;
     padding: 8vh 0 5vh;
+    margin: 2em 0;
+    font-size: 2rem;
+    color: rgb(233, 233, 233);
+    text-transform: uppercase;
+    text-align: center;
 }
 
 
