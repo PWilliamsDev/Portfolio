@@ -215,20 +215,34 @@ label{
     color: white;
     display: block;
     padding-top: 50px;
+    padding-bottom: 10px;
 }
 input{
-    padding: 10px 50px;
+    width: 80vw;
+    height: 30px;
     background-color: rgb(48, 48, 49);
     border-style: none;
+    border-radius: 5px;
+    padding-left: 10px;
 }
 textarea{
-    padding: 10px 35px;
+    padding-left: 10px;
+    padding-top: 5px;
+    background-color: rgb(48, 48, 49);
+    border-style: none;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box;
+    width: 80vw;
+    height: 
 }
 #submitbtn{
     color: white;
     background-color: rgb(29, 29, 29);
     border-width: 2px;
     border-style: solid;
+    width: 100px;
+    margin-top: 10px;
 }
 
 
