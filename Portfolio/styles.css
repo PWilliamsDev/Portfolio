@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    outline: none;
 }
 body{
     font-family: 'Nunito Sans', sans-serif;
@@ -54,7 +55,7 @@ body{
     width: 60vw;
     height: 100vh;
     border-radius: 2% 0 0 2%;
-    background-color: rgba(230, 230, 230);
+    background-color: rgba(230, 230, 230, .98);
 }
 
 .change {
@@ -81,12 +82,11 @@ body{
 
                     /* Landing */
 .landing{
+    /* background-color: whitesmoke; */
     background-color: whitesmoke;
-
     /* Color for Dark Mode
     background-color: rgb(80, 80, 80);
     */
-     
     height: 100vh;
     overflow-x: hidden;
 }
@@ -100,48 +100,52 @@ body{
 .test{
     position: relative;
     right: 35px;
-
 }
 .intro .l-name{
     display: block;
     text-align: center;
     color: rgb(133, 186, 216);
     font-weight: 600;
-
-
 }
 .intro .title{
     display: block;
     font-size: 1.5rem;
     text-align: center;
 }
+/*
 .hero-container{
-    /*
     overflow-y: hidden;
     overflow-x: hidden;
-    */
     position: relative;
     top: 35vh;
 }
+*/
 #hero{
-    /*
     position: relative;
-    */
     width: 100%;
-    transform: scale(1.7);
-    z-index: 500;
+    transform: scale(1.5);
     /*
-    top: 40vh;
+    top: 270px;
     */
     margin-left: 5vw;
     display: block;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+.hero-container{
+    overflow: hidden;
+    position: absolute;
+    top: 20em;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    
 }
 
 
 
                     /* About Me */
 .about{
-    height: 100vh;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -153,19 +157,13 @@ body{
     font-size: 2rem;
     color: rgb(54, 54, 54);
     text-transform: uppercase;
-
 }
 .card{
     background-color: rgb(26, 26, 26);
-    margin-bottom: 3vw;
-     height: 400px;
-     width: 400px;
+    margin-bottom: 1vh;
+    height: 55vw;
+    width: 55vw;
 }
-.card1, .card2, .card3{
-
-}
-
-
 
 
 
@@ -173,7 +171,6 @@ body{
 
                     /* Projects */
 .projects{
-    height: 100vh;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -186,23 +183,25 @@ body{
     color: rgb(54, 54, 54);
     text-transform: uppercase;
 }
-.project{
-    margin-bottom: 2vh;
-} 
 .demo img{
     width: 80vw;
-    /*transform: scale(1);*/
     position: relative;
+    display: block;
 }
-
-
+.project{
+    margin-bottom: 1vh;
+}
 
                     /* Contact */
 .contact{
-    height: 75vh;
-    margin-top: 5em;
+    height: 91vh;
     background-color: rgb(29, 29, 29);
     
+}
+.containerform{
+    display: flex;
+    justify-content: center;
+
 }
 .contact h1{
     padding: 8vh 0 5vh;
@@ -212,13 +211,40 @@ body{
     text-transform: uppercase;
     text-align: center;
 }
+label{
+    color: white;
+    display: block;
+    padding-top: 50px;
+}
+input{
+    padding: 10px 50px;
+    background-color: rgb(48, 48, 49);
+    border-style: none;
+}
+textarea{
+    padding: 10px 35px;
+}
+#submitbtn{
+    color: white;
+    background-color: rgb(29, 29, 29);
+    border-width: 2px;
+    border-style: solid;
+}
 
 
 
 
 
-  @media (min-width: 688px){
+
+
+  @media (max-width: 688px){
       body{
-          opacity: 0;
+          opacity: ;
       }
   }
+
+  @media (min-width: 992){
+    body{
+        opacity: 0;
+    }
+}
