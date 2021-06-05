@@ -4,114 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <nav class="navbar"> 
-        <span class="logo">PW</span>
-        <div class="h-nav">
-            <ul>
-                <a href="#">
-                    <li>Home</li>
-                </a>
-                <a href="#">
-                    <li>About</li>
-                </a>
-                <a href="#">
-                    <li>Projects</li>
-                </a>    
-                <a href="#">
-                    <li>Contact</li>
-                </a>        
-            </ul>
+    <div class="nav-wrapper">
+        <div class="top-nav-wrapper">
+            <img id="profileimg" src="images/profile picture.jpg" alt="">
+            <span class="name">Marquel Williams</span>
+            <span class="title">Frontend Developer</span>
+            <div class="socials">
+                <img src="images/linkedin.png" alt="">
+                <img src="images/github.png" alt="">
+                <img src="images/twitch.png" alt="">
+            </div>
         </div>
-        <div class="hamburger-menu">
-            <div id="topline" class="line line-1"></div>
-            <div id="bottomline" class="line line-2"></div>
-        </div>
-        <div class="snav">
-            <div class="ham-container">
-                <ul class="nav-list"> 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+        <div class="bottom-nav-wrapper">
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-
-    <section class="landing">
+    </div>
+    <div class="hero">
         <div class="intro">
-            <p><span class="greet">Hi <span class="omit">There </span>I'm</span><span class="name">Parker Williams.</span></p>
-            <span class="title">web developer</span>
+            <span id="intro">Hi There, I'm</span>
+            <span class="hero-name">Marquel Williams</span>
+            <span class="hero-title">Frontend Developer</span>
         </div>
-        <div class="hero-container">
-            <img id="hero" src="images/hero-light.png" alt="">
-        </div>
-    </section>
-
-    <section class="about">
-        <h1>About Me</h1>
-        <div class="about-container">
-            <div class="card card1">
-            </div>
-            <div class="card card2">   
-            </div>
-            <div class="card card3"> 
-            </div>
-        </div>
-    </section>
-
-    <section class="projects">
-        <h1>Projects</h1>
-        <div class="project project-1">
-            <div class="demo">
-                <img src="images/placeholder.gif" alt="">
-            </div>
-        </div>
-
-        <div class="project project-2">
-            <div class="demo">
-                <img src="images/placeholder.gif" alt="">
-            </div>
-        </div>
-        <div class="project project-3">
-            <div class="demo">
-                <img src="images/placeholder.gif" alt="">
-            </div>
-        </div>
-    </section>
-    <section class="contact">
-        <h1>Contact Me</h1>
-        <div class="container-form">
-            <form action="https://formspree.io/f/mnqlqjkk" method="POST">
-                <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                </div>
-                <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                <label for="user-message" name="user-message">Your Message</label>
-                <textarea name="message" id="message"></textarea>
-                </div>
-                <input id="submitbtn" type="submit" value="SUBMIT">
-            </form>
-        </div>
-    </section>
-<script src="script.js"></script>   
+        <img src="images/bg picture.jpg" alt="">
+    </div>
 </body>
 </html>

@@ -1,387 +1,107 @@
-                    /* FONTS */
-
-
-                    /* Default */
 *{
-    margin: 0;
     padding: 0;
-    outline: none;
+    margin: 0;
+}
+a{ 
+    color: black;
+    text-decoration: none;
+}
+li{
+    list-style: none;
 }
 body{
-    font-family: 'Nunito Sans', sans-serif;
-    
+    background-color: #F0F0F0;
+    height: 500vh;
+    font-family: Arial;
 }
-
-
-
-                    /* Navigation */
-                   
-.navbar{
-    position: relative;
-    right: -300em;
-}
-.logo{
+.nav-wrapper{
+    border: 1px #707070 solid;
+    width: 20vw;
+    margin-top: 10px;
+    margin-left: 13px;
     position: fixed;
-    top: 15px;
-    font-size: 1.5em;
-    font-weight: 800;
-    left: 15px;
-    z-index: 100;
-    color: rgb(46, 46, 46);
+    height: 98vh;
+    background-color: #E3E3E3;
 }
-
-.hamburger-menu{
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    z-index: 1000;
-    cursor: pointer;
+.top-nav-wrapper{
+    background-color: #EDEDED;
+    border-bottom: solid #707070 1px;
+    padding-top: 34px;
 }
-.line{
-    width: 35px;
-    height: 5px;
-    background-color: rgb(46, 46, 46);
-    margin: 6px 0;
-    transition: all .6s;
-}
-.change .line-1{
-    transform: rotateZ(-45deg) translate(-8px, 0px);
-    background-color: rgb(46, 46, 46);
-}
-.change .line-2 {
-    transform: rotateZ(45deg) translate(-8px, 0px);
-    background-color: rgb(46, 46, 46);
-}
-
-.ham-container{
-    position: fixed;
-    z-index: 100;
-    width: 60vw;
-    height: 100vh;
-    border-radius: 2% 0 0 2%;
-    background-color: rgba(230, 230, 230, .98);
-}
-.change {
- left: 40vw;
-}
-.nav-list{
-    list-style-type: none;
-    z-index: 100;
-    font-weight: 700;
-    text-align: center;
-}
-.nav-item{
-    position: relative;
-    top: 40vh;
-    margin-top: 3.5vh;
-    font-size: 1.4rem;
-}
-.nav-link{
-    text-decoration: none;
-    color: rgb(46, 46, 46);
-}
-
-.h-nav{
-    position: fixed;
-    z-index: 100;
-    font-size: 1.5rem;
-    right: 0;
-
-    top: 15px;
-    display: none;
-}
-.h-nav a{
-    text-decoration: none;
-    list-style: none;
-    color: black;
-    margin-right: 20px;
-}
-.h-nav ul{
-    display: flex;
-    flex-direction: row;
-}
-
-
-
-                    /* Landing */
-.landing{
-    background-color: whitesmoke;
-    overflow-x: hidden;
-}
-.intro{
-    position: relative;
-    top: 20vh;
-    text-align: center;  
-    font-size: 2.5rem;
-    color: rgb(46, 46, 46);
-    margin-bottom: 5em;
-}
-.greet{
-    position: relative;
-    right: 35px;
-}
-.intro .name{
+#profileimg{
+    border-radius: 50%;
+    width: 200px;
     display: block;
-    text-align: center;
-    color: rgb(8, 72, 116);
-    font-weight: 600;
-}
-.intro .title{
-    display: block;
-    font-size: 1.5rem;
-    text-align: center;
-}
-.hero-container{
-    display: block;
-}
-#hero{
-    position: relative;
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    display: block;
-    box-sizing: content-box;
 }
-
-
-
-                    /* About Me */
-.about{
-    background-color: whitesmoke;
+.name{
+    font-size: 30px;
+    font-weight: bold;
+    color: #707070;
+    display: block;
     text-align: center;
 }
-.about-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.about h1{
-    padding: 8vh 0 5vh;
-    font-size: 2rem;
-    color: rgb(54, 54, 54);
-    text-transform: uppercase;
-}
-.card{
-    background-color: rgb(26, 26, 26);
-    margin-bottom: 1vh;
-    height: 400px;
-    width: 400px;
-}
-
-
-
-                    /* Projects */
-.projects{
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.projects h1{
-    padding: 8vh 0 5vh;
-    margin: 2em 0;
-    font-size: 2rem;
-    color: rgb(54, 54, 54);
-    text-transform: uppercase;
-}
-.demo img{
-    width: 80vw;
-    position: relative;
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
     display: block;
-}
-.project{
-    margin-bottom: 1vh;
-}
-
-
-
-                    /* Contact */
-.contact{
-    height: 91vh;
-    background-color: rgb(29, 29, 29);
-}
-.contact h1{
-    padding: 8vh 0 5vh;
-    margin: 2em 0;
-    font-size: 2rem;
-    color: rgb(233, 233, 233);
-    text-transform: uppercase;
     text-align: center;
 }
-.container-form{
+.socials{
     display: flex;
     justify-content: center;
 }
-label{
-    color: white;
-    display: block;
-    padding-top: 50px;
-    padding-bottom: 10px;
+.socials img{
+    width: 25px;
+    margin: 15px 16px 15px 16px;
 }
-input{
-    width: 80vw;
-    height: 30px;
-    background-color: rgb(48, 48, 49);
-    border-style: none;
-    border-radius: 5px;
-    padding-left: 10px;
-    color: whitesmoke;
-    font-weight: bold;
-}
-textarea{
-    padding-left: 10px;
-    padding-top: 8.5px;
-    background-color: rgb(48, 48, 49);
-    border-style: none;
-    border-radius: 5px;
-    resize: vertical;
+.bottom-nav-wrapper{
+    background-color: #E3E3E3;
     box-sizing: border-box;
-    width: 82vw;
-    color: whitesmoke;
+}
+.nav-bar ul{
+    float: right;
+    margin-top: 94px;
+    margin-right: 35px;
+    text-align: right;
+    line-height: 40px;
+}
+.nav-bar a{
+    font-size: 30px;
     font-weight: bold;
-    letter-spacing: 2px;
+    color: #707070;
 }
-#message{
-    height: 60px;
+.hero{
+    margin-left: 21vw;
+    padding-top: 330px;
+    padding-left: 170px;
 }
-#submitbtn{
-    color: white;
-    background-color: rgb(29, 29, 29);
-    border-width: 2px;
-    border-style: solid;
-    width: 100px;
-    margin-top: 10px;
+.intro{
+    font-size: 50px;
+    font-weight: bold;
+    color: #333333;
 }
-
-
-
-
-
-/* Responsive Design */
-
-
-
-
-
-/* Tablets */
-  @media (min-width: 688px){
-
-
-
-                    /* Navigation */
-    .logo{
-        font-size: 2em;
-    }
-    .hamburger-menu{
-        display: none;
-    }
-    .h-nav{
-        display: unset;
-        margin-right: 2em;
-    }
-
-
-
-                        /* Landing */
-    .intro{
-        font-size: 3.5rem;
-        position: relative;
-        top: 100px;
-        float: left;
-        left: 35px;
-        color: rgb(61, 61, 61);
-        margin-bottom: 3.6em;
-    }
-    .intro p{
-        font-weight: bold;
-    }
-    span{
-        position: relative;
-        left: 0;
-    }
-    .greet::after{
-        content: ', ';
-    }
-    .omit{
-        display: none;
-    }
-    .intro .name{
-        display: inline-block;
-        color: rgb(8, 72, 116);
-    }
-    .title{
-        float: left;
-        margin-left: 20px;
-        margin-top: 15px;
-        font-size: 2rem !important;
-    }
-    #hero{
-        width: 680px;
-    }
-                /* About */
-
-
-
-.about{
-    background-color: rgb(201, 33, 33);
-    text-align: center;
-    height: 100vh;
+.hero-name, .hero-title{
+    font-weight: bold;
+    display: block;
 }
-.about-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.hero-name{
+    color: #002A53;
+    font-size: 75px;
 }
-.card3{
-    position: relative;
-    top: 50em;
-}
-.card{
-    background-color: rgb(26, 26, 26);
-    margin-right: 1vh;
-    height: 400px;
-    width: 400px;
-}
-                /* Projects */
-                /* Contact */
-  }
-
-
-
-/* Small Laptops */
-  @media (min-width: 992px){
-
-
-
-                    /* Navigation */
-    .hero-container{
-        margin-top: 20em;
-    }
-                /* Landing */
-                /* About */
-    .about{
-        background: yellow ;
-    }
-                /* Projects */
-                /* Contact */
+.hero-title{
+    color: #333333;
+    font-size: 45px;
 }
 
 
-/* Desktop */
-@media (min-width: 1312px){
-
-
-
-                /* Navigation */
-                /* Landing */
-    .about{
-        background: rgb(24, 7, 182);
-    }
-
-                /* About */
-                /* Projects */
-                /* Contact */
-
-
-
+.hero img{
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    height: 63vh;
+    width: 30vw;
+    object-fit: cover;
 }
