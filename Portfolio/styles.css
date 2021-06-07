@@ -11,14 +11,13 @@ li{
 }
 body{
     background-color: #F0F0F0;
-    height: 500vh;
     font-family: Arial;
 }
 .nav-wrapper{
     border: 1px #707070 solid;
-    width: 20vw;
-    margin-top: 10px;
-    margin-left: 13px;
+    width: 358px;
+    margin-top: 13px;
+    margin-left: 11px;
     position: fixed;
     height: 98vh;
     background-color: #E3E3E3;
@@ -26,14 +25,15 @@ body{
 .top-nav-wrapper{
     background-color: #EDEDED;
     border-bottom: solid #707070 1px;
-    padding-top: 34px;
+    padding-top: 21px;
 }
 #profileimg{
     border-radius: 50%;
-    width: 200px;
+    width: 195px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 .name{
     font-size: 30px;
@@ -63,25 +63,32 @@ body{
 }
 .nav-bar ul{
     float: right;
-    margin-top: 94px;
+    margin-top: 70px;
     margin-right: 35px;
     text-align: right;
-    line-height: 40px;
+    line-height: 39px;
 }
 .nav-bar a{
     font-size: 30px;
     font-weight: bold;
     color: #707070;
 }
-.hero{
-    margin-left: 21vw;
-    padding-top: 330px;
+#hero{
+    margin-left: 30vw;
+    height: 100vh;
+    /*
     padding-left: 170px;
+    /*
+    /*
+    padding-top: 30vh;
+    */
 }
 .intro{
     font-size: 50px;
     font-weight: bold;
     color: #333333;
+    position: relative;
+    top: 340px;
 }
 .hero-name, .hero-title{
     font-weight: bold;
@@ -90,6 +97,8 @@ body{
 .hero-name{
     color: #002A53;
     font-size: 75px;
+    position: relative;
+    padding-left: 5px;
 }
 .hero-title{
     color: #333333;
@@ -97,11 +106,23 @@ body{
 }
 
 
-.hero img{
+#hero img{
     position: absolute;
     right: 13px;
     top: 13px;
-    height: 63vh;
-    width: 30vw;
+    height: 680px;
+    width: 550px;
     object-fit: cover;
+}
+#about{
+    background-color: rgb(6, 192, 62);
+    height: 70vh;
+} 
+#work{
+    background-color: thistle;
+    height: 70vh;
+}
+#contact{
+    background-color: rgb(214, 22, 214);
+    height: 70vh;
 }
